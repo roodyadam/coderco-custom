@@ -1,0 +1,19 @@
+name: Coderco Custom Action
+
+description: greet someome 
+
+inputs:
+ who-to-greet:
+   description: 'Who to greet'
+   required: true
+   default: 'World'
+
+outputs: 
+ time:
+   description: 'The time we greeted'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+
